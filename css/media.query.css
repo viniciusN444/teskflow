@@ -1,0 +1,122 @@
+@media screen and (min-width: 481px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .containerLista {
+        max-width: 450px;
+    }
+
+    .imgLogo {
+        width: 120px;
+        height: 120px;
+    }
+
+    input, button {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .containerLista {
+        max-width: 570px;
+    }
+
+    .imgLogo {
+        width: 150px;
+        height: 130px;
+    }
+
+    input, button {
+        padding: 18px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .containerLista {
+        max-width: 800px;
+    }
+
+    .imgLogo {
+        width: 200px;
+        height: 180px;
+    }
+
+    input, button {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    input {
+        width: 65%;
+    }
+
+    button {
+        width: 30%;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .containerTeskFlow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgLogo {
+        width: 180px;
+        margin-top: 10px;
+    }
+
+    .containerLista {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .containerBtnInput {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

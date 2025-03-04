@@ -1,0 +1,115 @@
+/* Paleta de cores */
+:root {
+    --bluelH1: #003b67;
+    --blueLight: #c8dedc;
+    --blueContainerList: #017aaf;
+    --white: #ffffff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--blueLight);
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerTeskFlow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+}
+
+.imgLogo {
+    width: 115px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--bluelH1);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+/* CONTAINER LISTA */
+.containerLista {
+    background-color: var(--blueContainerList);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 330px;
+    height: 80vh;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+/* INPUT E BOTÃO */
+.containerBtnInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 70%;
+}
+
+button {
+    color: var(--bluelH1);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--blueLight);
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+    color: var(--bluelH1);
+    font-weight: bold;
+}
+
+a {
+    color: var(--bluelH1);
+}
+
+a:hover {
+    color: rgba(0, 0, 255, 0.357);
+    text-decoration: underline;
+}
