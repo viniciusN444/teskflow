@@ -1,15 +1,15 @@
 @media screen and (min-width: 481px) {
     h1 {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .containerLista {
-        max-width: 450px;
+        width: 450px;
     }
 
     .imgLogo {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
     }
 
     input, button {
@@ -17,106 +17,137 @@
     }
 
     footer {
-        font-size: 16px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    h1,footer {
+        font-size: 30px;
+    }
+
+    .containerLista {
+        width: 560px;
+    }
+
+    .imgLogo {
+        width: 160px;
+        height: 160px;
+    }
+
+    input, button {
+        padding: 25px;
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    h1 {
-        font-size: 25px;
-    }
-
-    .containerLista {
-        max-width: 570px;
-    }
-
-    .imgLogo {
-        width: 150px;
-        height: 130px;
-    }
-
-    input, button {
-        padding: 18px;
-    }
-
-    footer {
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    h1 {
+    h1,footer {
         font-size: 35px;
     }
 
     .containerLista {
-        max-width: 800px;
-    }
-
-    .imgLogo {
-        width: 200px;
-        height: 180px;
-    }
-
-    input, button {
-        padding: 20px;
-        font-size: 20px;
-    }
-
-    input {
-        width: 65%;
-    }
-
-    button {
-        width: 30%;
-    }
-
-    footer {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .containerTeskFlow {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 90%;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 660px;
+        height: 65vh;
     }
 
     .imgLogo {
         width: 180px;
-        margin-top: 10px;
+        height: 170px;
+    }
+
+    input, button {
+        padding: 30px;
+        font-size: 25px;
+    }
+}
+ 
+@media screen and (min-width: 1024px) {
+    .containerTeskFlow{
+        display: grid;
+        grid-template-areas: 
+            "header header  content"
+            "footer footer footer";
+        position: absolute;
+        top: 20%;
+        
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    main{
+        grid-area: content;
+    }
+
+    h1 {
+        display: none;
     }
 
     .containerLista {
-        width: 100%;
-        max-width: 400px;
+        width: 500px;
+        height: 500px;
+        margin: 10px;
     }
 
-    .containerBtnInput {
-        flex-direction: column;
-        width: 100%;
+    .imgLogo {
+        width: 500px;
+        height: 500px;
     }
 
-    input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    button {
-        width: 100%;
+    input, button {
+        padding: 30px;
+        font-size: 25px;
     }
 
     footer {
-        text-align: center;
-        margin-top: 20px;
+        grid-area: footer;
+        font-size: 30px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .containerTeskFlow{
+        display: grid;
+        grid-template-areas: 
+            "header header  content"
+            "footer footer footer";
+        position: absolute;
+        top: 20%;
+        
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    main{
+        grid-area: content;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .containerLista {
+        width: 450px;
+        height: 450px;
+        margin: 10px;
+    }
+
+    .imgLogo {
+        width: 450px;
+        height: 450px;
+    }
+
+    input, button {
+        padding: 30px;
+        font-size: 19px;
+    }
+
+    footer {
+        grid-area: footer;
+        font-size: 30px;
+    }
+} 
