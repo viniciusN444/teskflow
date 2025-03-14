@@ -12,6 +12,7 @@ function adicionar(){
         setTimeout(() => {
             mensagemErro.textContent = '';
         },1500)
+        return;
     }
 
     if(tarefas.indexOf(inputTarefa) !== -1){
