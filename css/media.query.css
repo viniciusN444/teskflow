@@ -1,10 +1,13 @@
+/* RESPONSIVIDADE */
+
+/* TELAS PEQUENAS */
 @media screen and (min-width: 481px) {
     h1 {
         font-size: 25px;
     }
 
     .containerLista {
-        width: 450px;
+        max-width: 450px;
     }
 
     .imgLogo {
@@ -12,7 +15,8 @@
         height: 130px;
     }
 
-    input, button {
+    input,
+    button {
         padding: 15px;
     }
 
@@ -21,13 +25,15 @@
     }
 }
 
+/* TABLETS */
 @media screen and (min-width: 670px) {
-    h1,footer {
+    h1,
+    footer {
         font-size: 30px;
     }
 
     .containerLista {
-        width: 560px;
+        max-width: 560px;
     }
 
     .imgLogo {
@@ -35,20 +41,22 @@
         height: 160px;
     }
 
-    input, button {
-        padding: 25px;
-        font-size: 20px;
+    input,
+    button {
+        padding: 20px;
+        font-size: 18px;
     }
 }
 
+/* TELAS MÉDIAS */
 @media screen and (min-width: 768px) {
-    h1,footer {
+    h1,
+    footer {
         font-size: 35px;
     }
 
     .containerLista {
-        width: 660px;
-        height: 65vh;
+        max-width: 660px;
     }
 
     .imgLogo {
@@ -56,28 +64,30 @@
         height: 170px;
     }
 
-    input, button {
-        padding: 30px;
-        font-size: 25px;
+    input,
+    button {
+        padding: 25px;
+        font-size: 20px;
     }
 }
- 
+
+/* TELAS GRANDES */
 @media screen and (min-width: 1024px) {
-    .containerTeskFlow{
+    .containerTeskFlow {
         display: grid;
-        grid-template-areas: 
-            "header header  content"
+        grid-template-areas:
+            "header header content"
             "footer footer footer";
         position: absolute;
-        top: 20%;
-        
+        top: 10%;
+        max-width: 80%;
     }
 
-    header{
+    header {
         grid-area: header;
     }
 
-    main{
+    main {
         grid-area: content;
     }
 
@@ -96,9 +106,10 @@
         height: 500px;
     }
 
-    input, button {
+    input,
+    button {
         padding: 30px;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     footer {
@@ -107,22 +118,23 @@
     }
 }
 
+/* TELAS EXTRA GRANDES */
 @media screen and (min-width: 1200px) {
-    .containerTeskFlow{
+    .containerTeskFlow {
         display: grid;
-        grid-template-areas: 
-            "header header  content"
+        grid-template-areas:
+            "header header content"
             "footer footer footer";
         position: absolute;
-        top: 20%;
-        
+        top: 10%;
+        max-width: 70%;
     }
 
-    header{
+    header {
         grid-area: header;
     }
 
-    main{
+    main {
         grid-area: content;
     }
 
@@ -141,13 +153,14 @@
         height: 450px;
     }
 
-    input, button {
-        padding: 30px;
-        font-size: 19px;
+    input,
+    button {
+        padding: 25px;
+        font-size: 20px;
     }
 
     footer {
         grid-area: footer;
         font-size: 30px;
     }
-} 
+}
